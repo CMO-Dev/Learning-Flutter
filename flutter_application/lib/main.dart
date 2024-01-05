@@ -1,3 +1,4 @@
+//123456
 import 'package:flutter/material.dart';
 
 void main() {
@@ -41,7 +42,7 @@ class _MyHomePage extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Click For Count 123",
+              "Click For Count",
             ),
             Text(
               "$num",
