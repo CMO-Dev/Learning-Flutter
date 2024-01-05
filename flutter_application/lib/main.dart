@@ -41,7 +41,7 @@ class _MyHomePage extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Click For Count Click For Count",
+              "Click For Count",
             ),
             Text(
               "$num",
