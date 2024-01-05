@@ -27,14 +27,37 @@ class MyHomePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FloatingActionButton(
+                  onPressed: counter.increment,
+                  child: const Icon(Icons.add),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(10),
+                ),
+                FloatingActionButton(
+                  onPressed: counter.remove,
+                  child: const Icon(Icons.remove),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(10),
+                ),
+                FloatingActionButton(
+                  onPressed: counter.reset,
+                  child: Text("Reset"),
+                ),
+              ],
+            ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: counter.increment,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: counter.increment,
+      //   tooltip: 'Increment',
+      //   child: const Icon(Icons.add),
+      // ),
     );
   }
 }
